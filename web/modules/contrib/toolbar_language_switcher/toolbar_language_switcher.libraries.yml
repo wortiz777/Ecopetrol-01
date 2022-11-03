@@ -1,0 +1,7 @@
+toolbar:
+  version: VERSION
+  css:
+    theme:
+      css/tls.icons.theme.css: {}
+  dependencies:
+    - toolbar/toolbar

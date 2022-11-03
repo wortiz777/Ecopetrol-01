@@ -1,0 +1,14 @@
+name: Dashboards
+description: "Dashboards based on layout builder."
+package: Dashboards
+core_version_requirement: ^9.4 || ^10
+type: module
+configure: entity.dashboard.collection
+dependencies:
+  - drupal:layout_builder
+  - drupal:views
+
+# Information added by Drupal.org packaging script on 2022-10-11
+version: '2.1.0-beta6'
+project: 'dashboards'
+datestamp: 1665520212

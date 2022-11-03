@@ -1,0 +1,5 @@
+services:
+  tls.render.builder:
+    class: Drupal\toolbar_language_switcher\RenderBuilder
+    arguments:
+      ['@language_manager', '@path.matcher']

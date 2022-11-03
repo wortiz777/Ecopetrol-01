@@ -1,0 +1,16 @@
+.admin-item-with-image {
+  display: flex;
+  gap: 30px;
+}
+
+.admin-item-with-image .image {
+  flex: 1 4;
+}
+
+.admin-item-with-image .image img {
+  border-radius: var(--ginBorderDefault, 0px);
+}
+
+.admin-item-with-image .content {
+  flex: 3 4;
+}

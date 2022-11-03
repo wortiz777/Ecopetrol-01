@@ -1,0 +1,10 @@
+/**
+ * Top level icons.
+ */
+.toolbar-bar .toolbar-icon-language:before {
+  background-image: url(../misc/icons/bebebe/language-24px.svg);
+}
+.toolbar-bar .toolbar-icon-language:active:before,
+.toolbar-bar .toolbar-icon-language.is-active:before {
+  background-image: url(../misc/icons/ffffff/language-24px.svg);
+}

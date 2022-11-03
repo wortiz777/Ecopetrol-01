@@ -1,0 +1,19 @@
+<?php
+
+/**
+ * @file
+ * Contains module functionality.
+ */
+
+/**
+ * Implements hook_toolbar().
+ */
+function toolbar_language_switcher_toolbar() {
+  $user = \Drupal::currentUser();
+
+  if ($user->hasPermission('use toolbar_language_switcher')) {
+    return \Drupal::service('tls.render.builder')->build();
+  }
+
+  return [];
+}

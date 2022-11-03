@@ -1,0 +1,24 @@
+dashboards.dashboards_settings_form:
+  path: "/admin/config/dashboards/dashboardssettings"
+  defaults:
+    _form: '\Drupal\dashboards\Form\DashboardsSettingsForm'
+    _title: "DashboardsSettingsForm"
+  requirements:
+    _permission: "administer dashboards"
+  options:
+    _admin_route: TRUE
+
+entity.dashboard.permissions_form:
+  path: "/admin/structure/dashboards/manage/{dashboard}/permissions"
+  defaults:
+    _title: "Manage permissions"
+    _form: 'Drupal\dashboards\Form\DashboardPermissionForm'
+    bundle_entity_type: dashboard
+  requirements:
+    _permission: "administer permissions"
+  options:
+    parameters:
+      bundle:
+        type: "entity:dashboard"
+        with_config_overrides: true
+        alias: dashboard

@@ -1,0 +1,15 @@
+name: Dashboards statistics
+description: 'Components for core statistics.'
+package: Dashboards
+
+core_version_requirement: ^8 || ^9
+type: module
+
+dependencies:
+- drupal:statistics
+- dashboards:dashboards
+
+# Information added by Drupal.org packaging script on 2022-10-11
+version: '2.1.0-beta6'
+project: 'dashboards'
+datestamp: 1665520212
