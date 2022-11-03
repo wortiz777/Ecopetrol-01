@@ -1,0 +1,25 @@
+uuid: 7ccc4594-a645-428c-a6d9-9fd356b4d389
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:a9192a20-9256-4925-9a46-4f4ce3fda1e1'
+  module:
+    - block_content
+  theme:
+    - olivero
+id: integraciones
+theme: olivero
+region: content
+weight: -7
+provider: null
+plugin: 'block_content:a9192a20-9256-4925-9a46-4f4ce3fda1e1'
+settings:
+  id: 'block_content:a9192a20-9256-4925-9a46-4f4ce3fda1e1'
+  label: Integraciones
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

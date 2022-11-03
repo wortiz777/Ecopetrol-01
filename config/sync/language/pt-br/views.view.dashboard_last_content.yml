@@ -1,0 +1,66 @@
+display:
+  default:
+    display_title: Principal
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Aplicar
+          reset_button_label: Reiniciar
+          exposed_sorts_label: 'Ordenar por'
+          sort_asc_label: Ascendente
+          sort_desc_label: Decrescente
+      pager:
+        options:
+          expose:
+            items_per_page_label: 'Itens por página'
+            items_per_page_options_all_label: '- Tudo -'
+            offset_label: Deslocamento
+          tags:
+            previous: ‹‹
+            next: ››
+      fields:
+        title:
+          label: Título
+          separator: ', '
+        uid:
+          label: 'Escrito por'
+          separator: ', '
+        created:
+          label: 'Escrito em'
+          separator: ', '
+        operations:
+          label: Operações
+      filters:
+        type:
+          expose:
+            label: 'Tipo de conteúdo'
+        title:
+          expose:
+            label: Título
+        uid:
+          expose:
+            label: 'Escrito por'
+      title: 'Todo o conteúdo'
+  embed_2:
+    display_options:
+      filters:
+        type:
+          expose:
+            label: 'Tipo de conteúdo'
+        title:
+          expose:
+            label: Título
+      fields:
+        title:
+          label: Título
+          separator: ', '
+        created:
+          label: 'Escrito em'
+          separator: ', '
+        operations:
+          label: Operações
+      arguments:
+        uid:
+          exception:
+            title: Tudo
+      title: 'Meu conteúdo'

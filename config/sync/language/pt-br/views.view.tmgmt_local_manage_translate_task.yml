@@ -1,0 +1,285 @@
+display:
+  default:
+    display_title: Principal
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Filtrar
+          reset_button_label: Reiniciar
+          exposed_sorts_label: 'Ordenar por'
+          sort_asc_label: Ascendente
+          sort_desc_label: Decrescente
+      pager:
+        options:
+          tags:
+            previous: '‹ Voltar'
+            next: 'Avançar ›'
+            first: '« Primeiro'
+            last: 'Último »'
+          expose:
+            items_per_page_label: 'Itens por página'
+            items_per_page_options_all_label: '- Tudo -'
+            offset_label: Deslocamento
+      fields:
+        tmgmt_local_task_bulk_form:
+          label: 'Atualização em massa'
+          action_title: 'Selecione a ação'
+        title:
+          label: Título
+          separator: ', '
+        word_count:
+          label: Palavras
+        item_count:
+          label: Itens
+        progress:
+          label: Progresso
+  assigned:
+    display_title: Atribuído
+    display_options:
+      menu:
+        title: Atribuído
+      fields:
+        tmgmt_local_task_bulk_form:
+          label: 'Atualização em massa'
+          action_title: 'Selecione a ação'
+        status:
+          label: Status
+          separator: ', '
+        progress:
+          label: Progresso
+        tuid:
+          separator: ', '
+        title:
+          label: Título
+          separator: ', '
+        source_language:
+          label: De
+          separator: ', '
+        target_language:
+          label: Para
+          separator: ', '
+        word_count:
+          label: Palavras
+        item_count:
+          label: Itens
+        loop_count:
+          separator: ', '
+        operations:
+          label: Operações
+      filters:
+        source_language:
+          expose:
+            label: 'Idioma de origem'
+        uid:
+          expose:
+            label: Provedor
+        title:
+          expose:
+            label: Título
+  closed:
+    display_title: Fechado
+    display_options:
+      menu:
+        title: Fechado
+      fields:
+        tmgmt_local_task_bulk_form:
+          label: 'Atualização em massa'
+          action_title: 'Selecione a ação'
+        status:
+          label: Status
+          separator: ', '
+        progress:
+          label: Progresso
+        created:
+          label: Criado
+          separator: ', '
+        tuid:
+          separator: ', '
+        title:
+          label: Título
+          separator: ', '
+        source_language:
+          label: De
+          separator: ', '
+        target_language:
+          label: Para
+          separator: ', '
+        word_count:
+          label: Palavras
+        item_count:
+          label: Itens
+        loop_count:
+          separator: ', '
+        operations:
+          label: Operações
+      filters:
+        source_language:
+          expose:
+            label: 'Idioma de origem'
+        uid:
+          expose:
+            label: Provedor
+        title:
+          expose:
+            label: Título
+  completed:
+    display_title: Concluído
+    display_options:
+      menu:
+        title: Concluído
+      fields:
+        tmgmt_local_task_bulk_form:
+          label: 'Atualização em massa'
+          action_title: 'Selecione a ação'
+        status:
+          label: Status
+          separator: ', '
+        progress:
+          label: Progresso
+        created:
+          label: Criado
+          separator: ', '
+        tuid:
+          separator: ', '
+        title:
+          label: Título
+          separator: ', '
+        source_language:
+          label: De
+          separator: ', '
+        target_language:
+          label: Para
+          separator: ', '
+        word_count:
+          label: Palavras
+        item_count:
+          label: Itens
+        loop_count:
+          separator: ', '
+        operations:
+          label: Operações
+      filters:
+        source_language:
+          expose:
+            label: 'Idioma de origem'
+        uid:
+          expose:
+            label: Provedor
+        title:
+          expose:
+            label: Título
+  pending:
+    display_title: Pendente
+    display_options:
+      menu:
+        title: Pendente
+      fields:
+        tmgmt_local_task_bulk_form:
+          label: 'Atualização em massa'
+          action_title: 'Selecione a ação'
+        status:
+          label: Status
+          format_plural_string: !!binary MQNAY291bnQ=
+        tuid:
+          separator: ', '
+        title:
+          label: Título
+          separator: ', '
+        progress:
+          label: Progresso
+        source_language:
+          label: De
+          separator: ', '
+        target_language:
+          label: Para
+          separator: ', '
+        word_count:
+          label: Palavras
+        item_count:
+          label: Itens
+        loop_count:
+          separator: ', '
+        operations:
+          label: Operações
+      filters:
+        source_language:
+          expose:
+            label: 'Idioma de origem'
+        uid:
+          expose:
+            label: Provedor
+        title:
+          expose:
+            label: Título
+  rejected:
+    display_title: Rejeitada
+    display_options:
+      menu:
+        title: Rejeitada
+      fields:
+        tmgmt_local_task_bulk_form:
+          label: 'Atualização em massa'
+          action_title: 'Selecione a ação'
+        status:
+          label: Status
+          format_plural_string: !!binary MQNAY291bnQ=
+        progress:
+          label: Progresso
+        created:
+          label: Criado
+          separator: ', '
+        tuid:
+          separator: ', '
+        title:
+          label: Título
+          separator: ', '
+        source_language:
+          label: De
+          separator: ', '
+        target_language:
+          label: Para
+          separator: ', '
+        word_count:
+          label: Palavras
+        item_count:
+          label: Itens
+        loop_count:
+          separator: ', '
+        operations:
+          label: Operações
+      filters:
+        source_language:
+          expose:
+            label: 'Idioma de origem'
+        uid:
+          expose:
+            label: Provedor
+        title:
+          expose:
+            label: Título
+  unassigned:
+    display_options:
+      fields:
+        tmgmt_local_task_bulk_form:
+          label: 'Atualização em massa'
+          action_title: 'Selecione a ação'
+        status:
+          label: Status
+          format_plural_string: !!binary MQNAY291bnQ=
+        title:
+          label: Título
+          separator: ', '
+        source_language:
+          label: De
+          separator: ', '
+        target_language:
+          label: Para
+          separator: ', '
+        word_count:
+          label: Palavras
+        item_count:
+          label: Itens
+        loop_count:
+          separator: ', '
+        operations:
+          label: Operações

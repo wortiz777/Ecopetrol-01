@@ -1,0 +1,40 @@
+title: 'Avaliação da Sessão'
+description: 'Um modelo de formulário para avaliação de sessão.'
+elements: |
+  overall:
+    '#type': radios
+    '#title': 'Como foi a sessão no geral?'
+    '#options_display': side_by_side
+    '#options': likert_quality
+    '#required': true
+  speaker:
+    '#type': webform_likert
+    '#title': 'Sobre o palestrante, avalie…'
+    '#questions':
+      mastery: 'Domínio do assunto'
+      presentation: 'Habilidade de apresentação'
+      quality: 'Qualidade de slides e auxílios visuais'
+    '#answers': likert_quality
+    '#na_answer': true
+    '#required': true
+  learn:
+    '#type': radios
+    '#title': 'Você aprendeu alguma coisa nessa sessão que pode usar na vida real?'
+    '#options_display': side_by_side
+    '#options':
+      'Sim': 'Sim'
+      'Não': 'Não'
+      N/A: N/A
+    '#required': true
+  comments:
+    '#type': textarea
+    '#title': Comments
+    '#description': 'O que você mais gostou? O que mudaria? Que conselhos tem para o apresentador tornar essa sessão melhor?'
+settings:
+  confirmation_message: 'Obrigado pelo feedback.'
+handlers:
+  email_notification:
+    label: 'Notificação por Email'
+    settings:
+      subject: _default
+      body: _default

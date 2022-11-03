@@ -1,0 +1,111 @@
+title: Ocorrência
+description: 'Um modelo de webform para ocorrência.'
+elements: |
+  meta_data_details:
+    '#title': 'Informações da ocorrência'
+    '#type': details
+    '#open': true
+    meta_data_01:
+      '#type': webform_flexbox
+      title:
+        '#type': textfield
+        '#title': Título
+        '#required': true
+      project:
+        '#type': select
+        '#title': Projeto
+        '#required': true
+        '#options':
+          'Projeto I': 'Projeto I'
+          'Projeto II': 'Projeto II'
+          'Projeto III': 'Projeto III'
+    meta_data_02:
+      '#type': webform_flexbox
+      category:
+        '#type': select
+        '#title': Categoria
+        '#required': true
+        '#options':
+          'Relatório de Bugs': 'Relatório de Bugs'
+          Task: Task
+          'Solicitação de funcionalidade': 'Solicitação de funcionalidade'
+          'Solicitação de suporte': 'Solicitação de suporte'
+          Plano: Plano
+      priority:
+        '#type': select
+        '#title': Prioridade
+        '#required': true
+        '#options':
+          4: Crítica
+          3: Major
+          2: Normal
+          1: Menor
+      status:
+        '#type': webform_select_other
+        '#title': Situação
+        '#required': true
+        '#options':
+          Active: Ativo
+          'Necessita trabalho': 'Necessita trabalho'
+          'Necessita revisão': 'Necessita revisão'
+          'Revisto e testado pela comunidade': 'Revisto e testado pela comunidade'
+          'Patch (a ser portado)': 'Patch (a ser portado)'
+          Corrigido: Corrigido
+          Adiado: Adiado
+          'Adiado (mantenedor necessita mais informações)': 'Adiado (mantenedor necessita mais informações)'
+          'Fechado (duplicado)': 'Fechado (duplicado)'
+          'Fechado (não corrigir)': 'Fechado (não corrigir)'
+          'Fechado (funciona como especificado)': 'Fechado (funciona como especificado)'
+          'Fechado (não pôde reproduzir)': 'Fechado (não pôde reproduzir)'
+          'Fechado (desatualizado)': 'Fechado (desatualizado)'
+      version:
+        '#type': webform_autocomplete
+        '#title': Versão
+        '#required': true
+        '#autocomplete_existing': true
+      component:
+        '#type': webform_select_other
+        '#title': Component
+        '#required': true
+        '#options':
+          Código: Código
+          Documentação: Documentação
+          Miscelâneo: Miscelâneo
+          'User interface': 'Interface de Usuário'
+      assigned:
+        '#type': entity_autocomplete
+        '#title': Atribuído
+        '#target_type': user
+        '#selection_handler': 'default:user'
+        '#selection_settings':
+          include_anonymous: false
+    meta_data_03:
+      '#type': webform_flexbox
+      tags:
+        '#type': entity_autocomplete
+        '#title': 'Tags de Ocorrências'
+        '#description': '<strong>Não</strong> use para palavras aleatórias ou para duplicar outros campos. Separe termos com vírgula, não espaço.'
+        '#tags': true
+        '#target_type': taxonomy_term
+        '#selection_handler': 'default:taxonomy_term'
+        '#selection_settings':
+          target_bundles:
+            tags: tags
+          auto_create: 1
+          auto_create_bundle: tags
+  summary_and_relationshsips_details:
+    '#title': 'Sumário da ocorrência'
+    '#type': details
+    '#open': true
+    summary:
+      '#type': text_format
+      '#title': Sumário
+      '#description': 'Um sumário de ocorrência é uma visão geral da ocorrência.Deve ser escrito se a ocorrência tem mais de alguns comentários e/ou um desenvolvedor médio não pode entender o assunto após alguns minutos de estudoEstes sumários são fontes inportantes de informações para desenvolvedores revisores e usuários que precisam passar por grandes volumes de ocorrências e informações rapidamente.'
+  files_details:
+    '#title': Arquivos
+    '#type': details
+    '#open': true
+    files:
+      '#type': managed_file
+      '#title': Files
+      '#multiple': true

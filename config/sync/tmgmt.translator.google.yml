@@ -1,0 +1,14 @@
+uuid: 5f53b3fe-dd23-412f-92eb-260e0d5131d6
+langcode: en
+status: true
+dependencies:
+  module:
+    - tmgmt_google
+name: google
+label: Google
+description: 'Google Translator service.'
+auto_accept: null
+weight: null
+plugin: google
+settings: {  }
+remote_languages_mappings: {  }

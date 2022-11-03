@@ -1,0 +1,34 @@
+uuid: 6f58bd60-f1da-4238-ad42-572492443a7d
+langcode: es
+status: true
+dependencies:
+  config:
+    - dashboards.dashboard.dashboard_ecopetrol_test
+    - filter.format.basic_html
+  module:
+    - comment
+    - contact
+    - dashboards
+    - filter
+    - search
+    - shortcut
+    - system
+    - toolbar_language_switcher
+_core:
+  default_config_hash: I44QAB4es39lNzMQWiJLq2dfjX7VRSOzT_5KzAcUq_M
+id: authenticated
+label: 'Authenticated user'
+weight: 1
+is_admin: false
+permissions:
+  - 'access comments'
+  - 'access content'
+  - 'access shortcuts'
+  - 'access site-wide contact form'
+  - 'can override dashboard_ecopetrol_test dashboard'
+  - 'can view dashboard_ecopetrol_test dashboard'
+  - 'post comments'
+  - 'search content'
+  - 'skip comment approval'
+  - 'use text format basic_html'
+  - 'use toolbar_language_switcher'

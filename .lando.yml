@@ -1,0 +1,4 @@
+name: ecopetrol-t01
+recipe: drupal9
+config:
+  webroot: web

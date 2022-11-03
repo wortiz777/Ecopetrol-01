@@ -1,0 +1,41 @@
+title: Feedback
+description: 'Um modelo de feedback básico.'
+elements: |
+  type:
+    '#title': 'Tipo de feedback'
+    '#type': webform_radios_other
+    '#required': true
+    '#options':
+      Comments: Comentários
+      'Reportar um bug': 'Reportar um bug'
+      Questions: Questões
+    '#options_display': side_by_side
+  comments:
+    '#title': 'Seu feedback'
+    '#type': textarea
+    '#required': true
+  name:
+    '#title': 'Nome'
+    '#type': textfield
+    '#required': true
+  email:
+    '#title': 'Your Email'
+    '#type': email
+    '#required': true
+  actions:
+    '#type': webform_actions
+    '#title': 'Botões de envio'
+    '#submit__label': 'Enviar feedback'
+settings:
+  confirmation_message: 'Obrigado pelo feedback.'
+handlers:
+  email_confirmation:
+    label: 'E-mail de confirmação'
+    settings:
+      from_name: _default
+      subject: _default
+  email_notification:
+    label: 'Notificação de email'
+    settings:
+      from_name: '[webform_submission:values:name:raw]'
+      subject: _default

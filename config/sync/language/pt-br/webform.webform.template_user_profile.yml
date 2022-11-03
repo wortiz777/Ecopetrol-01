@@ -1,0 +1,8 @@
+title: 'Perfil de usuário'
+description: 'Um template de webform para perfil de usuário.'
+handlers:
+  email_notification:
+    label: 'Notificação por Email'
+    settings:
+      subject: _default
+      body: _default

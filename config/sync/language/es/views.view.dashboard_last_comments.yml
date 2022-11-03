@@ -1,0 +1,49 @@
+display:
+  default:
+    display_title: Máster
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Aplicar
+          reset_button_label: Restablecer
+          exposed_sorts_label: 'Ordenar por'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+      pager:
+        options:
+          expose:
+            items_per_page_label: 'Elementos por página'
+            items_per_page_options_all_label: '- Todo -'
+            offset_label: Desplazamiento
+          tags:
+            previous: ‹‹
+            next: ››
+      fields:
+        status:
+          separator: ', '
+        subject:
+          label: Comment
+          separator: ', '
+        comment_count:
+          label: 'Cantidad de comentarios'
+          format_plural_string: !!binary MQNAY291bnQ=
+        title:
+          label: Contenido
+          separator: ', '
+        name:
+          label: Autor
+          separator: ', '
+        created:
+          label: 'Fecha de mensaje'
+          separator: ', '
+        delete_comment:
+          text: eliminar
+        edit_comment:
+          label: Operaciones
+          text: editar
+      filters:
+        combine:
+          expose:
+            label: Buscar
+  embed_2:
+    display_title: 'Lista de comentario'

@@ -1,0 +1,17 @@
+title: Contate-nos
+description: 'Um modelo de formulário de contato básico.'
+settings:
+  confirmation_message: 'Sua mensagem foi enviada.'
+handlers:
+  email_confirmation:
+    label: 'E-mail de confirmação'
+    settings:
+      from_name: _default
+      subject: '[webform_submission:values:subject:raw]'
+      body: '[webform_submission:values:message:value]'
+  email_notification:
+    label: 'Notificação de email'
+    settings:
+      from_name: '[webform_submission:values:name:raw]'
+      subject: '[webform_submission:values:subject:raw]'
+      body: '[webform_submission:values:message:value]'

@@ -1,0 +1,49 @@
+display:
+  default:
+    display_title: Principal
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Aplicar
+          reset_button_label: Reiniciar
+          exposed_sorts_label: 'Ordenar por'
+          sort_asc_label: Ascendente
+          sort_desc_label: Decrescente
+      pager:
+        options:
+          expose:
+            items_per_page_label: 'Itens por página'
+            items_per_page_options_all_label: '- Tudo -'
+            offset_label: Deslocamento
+          tags:
+            previous: ‹‹
+            next: ››
+      fields:
+        status:
+          separator: ', '
+        subject:
+          label: Comentário
+          separator: ', '
+        comment_count:
+          label: 'Contador de comentários'
+          format_plural_string: !!binary MQNAY291bnQ=
+        title:
+          label: Conteúdo
+          separator: ', '
+        name:
+          label: Autor
+          separator: ', '
+        created:
+          label: 'Data de publicação'
+          separator: ', '
+        delete_comment:
+          text: apagar
+        edit_comment:
+          label: Operações
+          text: editar
+      filters:
+        combine:
+          expose:
+            label: Buscar
+  embed_2:
+    display_title: 'Lista de comentários'

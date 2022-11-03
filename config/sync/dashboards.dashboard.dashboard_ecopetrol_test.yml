@@ -1,0 +1,10 @@
+uuid: 098eb548-d987-4af8-8873-3122bf4d0c84
+langcode: en
+status: true
+dependencies: {  }
+id: dashboard_ecopetrol_test
+admin_label: 'Dashboard Ecopetrol Test'
+category: Pruebas
+frontend: true
+weight: 900
+sections: {  }

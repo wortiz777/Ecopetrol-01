@@ -1,0 +1,10 @@
+title: 'Perfil de Candidato'
+description: 'Um modelo de webform para candidato a emprego.'
+settings:
+  confirmation_message: 'Obrigado por se inscrever.'
+handlers:
+  email_notification:
+    label: 'Notificação por Email'
+    settings:
+      subject: _default
+      body: _default

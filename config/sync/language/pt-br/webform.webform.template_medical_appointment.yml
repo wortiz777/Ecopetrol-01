@@ -1,0 +1,11 @@
+title: 'Solicitar Consulta Médica'
+description: 'Um modelo para solicitação de consulta médica.'
+settings:
+  confirmation_title: Obrigado
+handlers:
+  email_notification:
+    label: 'Notificação de email'
+    settings:
+      from_name: '[webform_submission:values:name:raw]'
+      subject: '[webform_submission:values:subject:raw]'
+      body: '[webform_submission:values:message:value]'

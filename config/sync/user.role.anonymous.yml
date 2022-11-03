@@ -1,0 +1,30 @@
+uuid: 6be25776-6026-48e2-90af-0bf68d654abf
+langcode: es
+status: true
+dependencies:
+  config:
+    - dashboards.dashboard.dashboard_ecopetrol_test
+    - filter.format.restricted_html
+  module:
+    - comment
+    - contact
+    - dashboards
+    - filter
+    - search
+    - system
+    - toolbar_language_switcher
+_core:
+  default_config_hash: 6WavjUYXIegP9AAg2zXGx54MWIVoomC3SZhNiqe-Dyk
+id: anonymous
+label: 'Anonymous user'
+weight: 0
+is_admin: false
+permissions:
+  - 'access comments'
+  - 'access content'
+  - 'access site-wide contact form'
+  - 'can override dashboard_ecopetrol_test dashboard'
+  - 'can view dashboard_ecopetrol_test dashboard'
+  - 'search content'
+  - 'use text format restricted_html'
+  - 'use toolbar_language_switcher'

@@ -1,0 +1,18 @@
+settings:
+  confirmation_message: 'Obrigado pelo feedback.'
+handlers:
+  email_confirmation:
+    label: 'E-mail de confirmação'
+    settings:
+      from_name: _default
+      subject: _default
+  email_notification:
+    label: 'Notificação de email'
+    settings:
+      from_name: '[webform_submission:values:name:raw]'
+      subject: _default
+variants:
+  a:
+    label: A
+  b:
+    label: B

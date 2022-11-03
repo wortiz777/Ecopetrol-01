@@ -1,0 +1,10 @@
+title: Registro
+description: 'Um modelo de webform de registro.'
+settings:
+  confirmation_message: 'Obrigado por se registrar.'
+handlers:
+  email_notification:
+    label: 'Notificação por Email'
+    settings:
+      subject: _default
+      body: _default

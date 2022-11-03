@@ -1,0 +1,44 @@
+display:
+  default:
+    display_title: Principal
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Aplicar
+          reset_button_label: Reiniciar
+          exposed_sorts_label: 'Ordenar por'
+          sort_asc_label: Ascendente
+          sort_desc_label: Decrescente
+      pager:
+        options:
+          expose:
+            items_per_page_label: 'Itens por página'
+            items_per_page_options_all_label: '- Tudo -'
+            offset_label: Deslocamento
+          tags:
+            previous: '‹ Voltar'
+            next: 'Avançar ›'
+            first: '« Primeiro'
+            last: 'Último »'
+      fields:
+        status:
+          label: Status
+          format_plural_string: !!binary MQNAY291bnQ=
+        progress:
+          label: Progresso
+        label:
+          label: Rótulo
+        item_type:
+          label: Tipo
+          separator: ', '
+        word_count:
+          label: Palavras
+          separator: ', '
+        operations:
+          label: Operações
+      arguments:
+        tltid:
+          exception:
+            title: Tudo
+  block_1:
+    display_title: Bloco

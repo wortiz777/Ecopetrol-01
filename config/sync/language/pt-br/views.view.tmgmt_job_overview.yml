@@ -1,0 +1,58 @@
+display:
+  default:
+    display_title: Principal
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Aplicar
+          reset_button_label: Reiniciar
+          exposed_sorts_label: 'Ordenar por'
+          sort_asc_label: Ascendente
+          sort_desc_label: Decrescente
+      pager:
+        options:
+          expose:
+            items_per_page_label: 'Itens por página'
+            items_per_page_options_all_label: '- Tudo -'
+            offset_label: Deslocamento
+          tags:
+            previous: '‹ anterior'
+            next: 'próximo ›'
+            first: '« início'
+            last: 'fim »'
+      fields:
+        state:
+          label: Estado
+          separator: ', '
+        label:
+          label: Rótulo
+        source_language_1:
+          label: De
+          separator: ', '
+        target_language:
+          label: Para
+          separator: ', '
+        translator:
+          label: Provedor
+        progress:
+          label: Progresso
+        word_count:
+          label: Palavras
+        tags_count:
+          label: Tags
+        changed:
+          label: Alterado
+        operations:
+          label: Operações
+      filters:
+        state:
+          expose:
+            label: Estado
+        source_language:
+          expose:
+            label: 'Idioma de origem'
+        translator:
+          expose:
+            label: Provedor
+  page_1:
+    display_title: Página

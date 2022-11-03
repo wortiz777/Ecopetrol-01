@@ -1,0 +1,4 @@
+title: 'Avaliação de Empregado'
+description: 'Um webform modelo para avaliação de empregado.'
+settings:
+  confirmation_message: 'Obrigado por se inscrever.'
